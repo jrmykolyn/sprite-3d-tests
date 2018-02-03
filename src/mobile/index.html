@@ -161,20 +161,8 @@
                         // HANDLE X
                         elem.rotationX( ( coords.x - 45 ) * -1 ); // NOTE: Subtracting 45 from coords allows the element to appear 'unrotated' when the phone is tilted away.
 
-                        // let halfHeight = dims.height / 2;
-                        // let xVal = ( ( coords.y - halfHeight ) / halfHeight * 45 );
-                        // elem.rotationX( xVal * -1 ); /// TODO: Y tho?
-
-                        // FOR MOBILE DEVICES:
-                        // - GET ORIENATION VALUE B/W -180..180. (ie. 100)
-                        // - CONVERT TO DECIMAL VALUE B/W -1..1. (ie. 100/180 = 0.555555)
-                        // - MULTIPLE RESULT AGAINST MAX ROTATION. (ie. 0.555555 * 45 = ~25)
-                        // - APPLY. (ie. elem.rotationX( 25))
-
                         // HANDLE Y
-                        // let halfWidth = dims.width / 2;
-                        // let yVal = ( ( coords.x - halfWidth ) / halfWidth * 45 );
-                        // elem.rotationY( yVal );
+                        elem.rotationY( coords.y );
 
                         // HANDLE Z
                         /// TODO
