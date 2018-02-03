@@ -159,6 +159,9 @@
                         updateCoords( e );
 
                         // HANDLE X
+                        let xVal = ( coords.x / 180 ) * 45;
+                        elem.rotationX( xVal );
+
                         // let halfHeight = dims.height / 2;
                         // let xVal = ( ( coords.y - halfHeight ) / halfHeight * 45 );
                         // elem.rotationX( xVal * -1 ); /// TODO: Y tho?
